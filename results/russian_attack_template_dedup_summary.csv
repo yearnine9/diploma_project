@@ -1,0 +1,10 @@
+﻿manual_category,before,after,removed,report,dataset,count,mean,median,min,max
+instruction_override,48.0,40.0,8.0,category,,,,,,
+obfuscated_extraction,98.0,97.0,1.0,category,,,,,,
+output_manipulation,17.0,4.0,13.0,category,,,,,,
+persona_replacement,9.0,7.0,2.0,category,,,,,,
+priority_manipulation,2.0,2.0,0.0,category,,,,,,
+secret_extraction,13.0,13.0,0.0,category,,,,,,
+system_prompt_extraction,7.0,7.0,0.0,category,,,,,,
+,,,,length,before_dedup,194.0,61.09278350515464,34.0,4.0,230.0
+,,,,length,after_dedup,170.0,47.62352941176471,24.0,4.0,230.0

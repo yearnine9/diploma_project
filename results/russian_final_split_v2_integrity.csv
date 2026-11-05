@@ -1,0 +1,2 @@
+﻿train_validation_exact_overlap,train_test_exact_overlap,validation_test_exact_overlap,cross_split_near_duplicate_pairs,near_duplicate_threshold,status
+0,0,0,0,0.9,ru_v2_clean

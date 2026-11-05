@@ -1,0 +1,4 @@
+split,total,benign,attack,attack_semantic_groups
+train,252,126,126,42
+validation,54,27,27,9
+test,54,27,27,9

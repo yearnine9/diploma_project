@@ -1,0 +1,2 @@
+﻿train_size,validation_size,test_size,train_benign,train_attack,validation_benign,validation_attack,test_benign,test_attack,exact_overlap,cross_split_near_duplicate_pairs,near_duplicate_threshold,repair_iterations,status
+240,50,50,120,120,25,25,25,25,0,0,0.9,0,clean_and_closed

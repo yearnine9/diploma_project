@@ -1,0 +1,10 @@
+﻿split,source,count
+train,original_benign,79
+train,synthetic_password_hard_negative,22
+train,natural_hard_negative,19
+validation,original_benign,19
+validation,synthetic_password_hard_negative,4
+validation,natural_hard_negative,2
+test,original_benign,13
+test,natural_hard_negative,8
+test,synthetic_password_hard_negative,4

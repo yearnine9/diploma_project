@@ -1,0 +1,5 @@
+source_type,total,true_negative,false_positive,fpr
+hard_negative_v2,39,36,3,0.0769
+hard_negative_v1,45,42,3,0.0667
+long_zerde,168,168,0,0.0
+short_zerde,168,168,0,0.0

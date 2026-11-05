@@ -1,0 +1,2 @@
+﻿language,model,selection_basis,training_data,test_status,accuracy,precision,recall,f1,fpr,tn,fp,fn,tp
+ru,char_tfidf_linear_svm,validation_f1_then_fpr,train_plus_validation,closed_final_test,1.0,1.0,1.0,1.0,0.0,25,0,0,25

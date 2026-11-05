@@ -1,0 +1,2 @@
+model,accuracy,precision,recall,f1_score,false_positive_rate,tn,fp,fn,tp
+Linear SVM,0.992,0.9862637362637363,0.9972222222222222,0.9917127071823204,0.01282051282051282,385,5,1,359

@@ -1,0 +1,8 @@
+manual_category,manual_positive,selected_by_v2,missed,binary_recall,exact_category_rate
+obfuscated_extraction,39,28,11,0.7179,0.2821
+instruction_override,21,16,5,0.7619,0.6667
+output_manipulation,9,9,0,1.0,0.3333
+secret_extraction,6,4,2,0.6667,0.5
+persona_replacement,3,2,1,0.6667,0.3333
+priority_manipulation,1,1,0,1.0,1.0
+system_prompt_extraction,1,0,1,0.0,0.0

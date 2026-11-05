@@ -1,0 +1,8 @@
+﻿manual_category,count,mean,median,min,max
+obfuscated_extraction,98,35.97959183673469,17.0,4,218
+instruction_override,48,77.875,51.0,7,230
+output_manipulation,17,157.58823529411765,163.0,53,191
+secret_extraction,13,27.23076923076923,12.0,6,165
+persona_replacement,9,126.55555555555556,129.0,37,197
+system_prompt_extraction,7,45.142857142857146,28.0,7,158
+priority_manipulation,2,50.0,50.0,24,76

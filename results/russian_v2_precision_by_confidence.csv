@@ -1,0 +1,3 @@
+confidence,selected,true_positive,false_positive,binary_precision,exact_category_accuracy
+high,41,36,5,0.878,0.75
+medium,26,24,2,0.9231,0.25

@@ -1,0 +1,7 @@
+v2_category,selected,true_positive,false_positive,binary_precision,correct_category,exact_category_accuracy
+output_manipulation,4,4,0,1.0,3,0.75
+persona_replacement,1,1,0,1.0,1,1.0
+instruction_override,22,20,2,0.9091,14,0.7
+secret_extraction,22,20,2,0.9091,3,0.15
+obfuscated_extraction,16,14,2,0.875,11,0.7857
+priority_manipulation,2,1,1,0.5,1,1.0

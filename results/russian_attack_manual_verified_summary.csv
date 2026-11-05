@@ -1,0 +1,8 @@
+﻿manual_category,count,share
+obfuscated_extraction,98,0.5052
+instruction_override,48,0.2474
+output_manipulation,17,0.0876
+secret_extraction,13,0.067
+persona_replacement,9,0.0464
+system_prompt_extraction,7,0.0361
+priority_manipulation,2,0.0103

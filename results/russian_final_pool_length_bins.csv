@@ -1,0 +1,8 @@
+﻿length_bin,attack_count,benign_available,enough_benign_for_1_to_1
+1-5,3,7727,True
+6-10,27,6717,True
+11-20,49,1136,True
+21-40,22,22,True
+41-80,37,1,False
+81-160,30,0,False
+161+,26,0,False

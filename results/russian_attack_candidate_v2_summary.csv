@@ -1,0 +1,8 @@
+v2_category,v2_confidence,count
+instruction_override,high,163
+obfuscated_extraction,high,124
+output_manipulation,medium,4
+persona_replacement,high,5
+priority_manipulation,high,11
+secret_extraction,medium,279
+system_prompt_extraction,high,3

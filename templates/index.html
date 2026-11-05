@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="PI Shield — multilingual Prompt Injection detection with Machine Learning and Explainable AI"
+    >
+
+    <title>PI Shield — Prompt Injection Detection</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/styles.css') }}"
+    >
+</head>
+
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a
+            href="#top"
+            class="brand"
+            aria-label="PI Shield"
+        >
+
+            <span
+                class="brand-mark"
+                aria-hidden="true"
+            >
+
+                <svg viewBox="0 0 48 48">
+
+                    <path
+                        class="brand-shield"
+                        d="
+                        M24 4
+                        L39 10
+                        V22
+                        C39 32 32.5 39 24 43
+                        C15.5 39 9 32 9 22
+                        V10
+                        Z
+                        "
+                    ></path>
+
+                    <path
+                        class="brand-ornament"
+                        d="
+                        M15 23
+                        L20 18
+                        L24 23
+                        L28 18
+                        L33 23
+                        L28 28
+                        L24 23
+                        L20 28
+                        Z
+                        "
+                    ></path>
+
+                </svg>
+
+            </span>
+
+
+            <span class="brand-copy">
+
+                <strong>
+                    PI Shield
+                </strong>
+
+                <small data-i18n="brandSubtitle">
+                    Көптілді LLM қауіпсіздігі
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <nav
+            class="main-nav"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="#playground"
+                data-i18n="navPlayground"
+            >
+                Playground
+            </a>
+
+            <a
+                href="#analytics"
+                data-i18n="navAnalytics"
+            >
+                Аналитика
+            </a>
+
+            <a
+                href="#method"
+                data-i18n="navMethod"
+            >
+                Әдіс
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <div class="model-status">
+
+                <span
+                    class="status-dot"
+                    aria-hidden="true"
+                ></span>
+
+                <span data-i18n="modelActive">
+                    Модель белсенді
+                </span>
+
+            </div>
+
+
+            <div
+                class="language-switcher"
+                aria-label="Interface language"
+            >
+
+                <button
+                    type="button"
+                    class="language-button active"
+                    data-language="kk"
+                >
+                    KK
+                </button>
+
+                <button
+                    type="button"
+                    class="language-button"
+                    data-language="ru"
+                >
+                    RU
+                </button>
+
+                <button
+                    type="button"
+                    class="language-button"
+                    data-language="en"
+                >
+                    EN
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main id="top">
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+        <div class="hero-grid">
+
+            <div class="hero-copy">
+
+                <div
+                    class="eyebrow"
+                    data-i18n="heroEyebrow"
+                >
+                    MULTILINGUAL LLM SECURITY
+                </div>
+
+
+                <h1 class="hero-title">
+
+                    <span data-i18n="heroTitleMain">
+                        Prompt Injection шабуылдарын анықтау
+                    </span>
+
+                    <span
+                        class="hero-title-accent"
+                        data-i18n="heroTitleAccent"
+                    >
+                        LLM-ге жетпей тұрып.
+                    </span>
+
+                </h1>
+
+
+                <p
+                    class="hero-description"
+                    data-i18n="heroDescription"
+                >
+                    Қазақ, орыс және ағылшын тілдеріндегі
+                    сұрауларды Hybrid TF-IDF, Linear SVM
+                    және Explainable AI арқылы талдайтын
+                    зерттеу прототипі.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#playground"
+                        class="primary-cta"
+                    >
+
+                        <span data-i18n="openPlayground">
+                            Playground ашу
+                        </span>
+
+                        <svg
+                            viewBox="0 0 20 20"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M4 10h11M11 6l4 4-4 4"
+                            ></path>
+                        </svg>
+
+                    </a>
+
+
+                    <span class="hero-tech">
+                        KZ · RU · EN / ML · XAI
+                    </span>
+
+                </div>
+
+
+                <div class="hero-proof">
+
+                    <div>
+
+                        <span class="proof-label">
+                            MODEL
+                        </span>
+
+                        <strong>
+                            Hybrid TF-IDF + Linear SVM
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="proof-label">
+                            EXPLANATION
+                        </span>
+
+                        <strong>
+                            Local feature contributions
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PREVIEW -->
+
+            <div class="hero-demo">
+
+                <div class="demo-topbar">
+
+                    <span>
+                        DETECTION PREVIEW
+                    </span>
+
+                    <span class="demo-badge">
+
+                        <i aria-hidden="true"></i>
+
+                        STATIC EXAMPLES
+
+                    </span>
+
+                </div>
+
+
+                <div class="demo-row">
+
+                    <span class="demo-language">
+                        KZ
+                    </span>
+
+                    <code>
+                        Қазақстанның астанасы қандай?
+                    </code>
+
+                    <span class="demo-status safe">
+                        SAFE
+                    </span>
+
+                </div>
+
+
+                <div class="demo-row">
+
+                    <span class="demo-language">
+                        RU
+                    </span>
+
+                    <code>
+                        Игнорируй предыдущие инструкции...
+                    </code>
+
+                    <span class="demo-status attack">
+                        PI
+                    </span>
+
+                </div>
+
+
+                <div class="demo-row">
+
+                    <span class="demo-language">
+                        EN
+                    </span>
+
+                    <code>
+                        Ignore all previous instructions...
+                    </code>
+
+                    <span class="demo-status attack">
+                        PI
+                    </span>
+
+                </div>
+
+
+                <div class="demo-bottom">
+
+                    <span>
+                        WORD TF-IDF
+                    </span>
+
+                    <span>
+                        CHAR TF-IDF
+                    </span>
+
+                    <span>
+                        LINEAR SVM
+                    </span>
+
+                    <span>
+                        XAI
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ETHNO BACKGROUND -->
+
+        <div
+            class="hero-ethno"
+            aria-hidden="true"
+        >
+
+            <svg viewBox="0 0 500 500">
+
+                <path
+                    d="
+                    M42 250
+                    H136
+                    L184 202
+                    L232 250
+                    L184 298
+                    L136 250
+                    H268
+                    L316 202
+                    L364 250
+                    L316 298
+                    L268 250
+                    H458
+                    "
+                ></path>
+
+                <path
+                    d="
+                    M164 102
+                    L196 134
+                    L164 166
+                    L132 134
+                    Z
+
+                    M336 334
+                    L368 366
+                    L336 398
+                    L304 366
+                    Z
+                    "
+                ></path>
+
+            </svg>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ETHNO DIVIDER
+    ====================================================== -->
+
+    <div
+        class="ornament-divider"
+        aria-hidden="true"
+    >
+
+        <svg
+            viewBox="0 0 900 32"
+            preserveAspectRatio="none"
+        >
+
+            <path
+                d="
+                M0 16
+                H320
+                L336 2
+                L352 16
+                L368 30
+                L384 16
+                L400 2
+                L416 16
+                H484
+                L500 2
+                L516 16
+                L532 30
+                L548 16
+                L564 2
+                L580 16
+                H900
+                "
+            ></path>
+
+        </svg>
+
+    </div>
+
+
+    <!-- =====================================================
+         PLAYGROUND
+    ====================================================== -->
+
+    <section
+        id="playground"
+        class="content-section"
+    >
+
+        <header class="section-heading">
+
+            <div>
+
+                <span class="section-kicker">
+                    02 / PLAYGROUND
+                </span>
+
+                <h2 data-i18n="playgroundTitle">
+                    Prompt Security Playground
+                </h2>
+
+            </div>
+
+
+            <p data-i18n="playgroundDescription">
+                Нақты сұрауды модельге жіберіп,
+                классификация шешімін және XAI
+                түсіндірмесін тексеріңіз.
+            </p>
+
+        </header>
+
+
+        <div class="playground-shell">
+
+
+            <!-- PROMPT -->
+
+            <section class="prompt-pane">
+
+                <div class="pane-toolbar">
+
+                    <div class="toolbar-title">
+
+                        <span
+                            class="toolbar-dot"
+                            aria-hidden="true"
+                        ></span>
+
+                        <span>
+                            USER PROMPT
+                        </span>
+
+                    </div>
+
+
+                    <span
+                        id="charCounter"
+                        class="char-counter"
+                    >
+                        0 / 10 000
+                    </span>
+
+                </div>
+
+
+                <!-- EXAMPLES -->
+
+                <div class="example-strip">
+
+                    <span
+                        class="example-label"
+                        data-i18n="tryExample"
+                    >
+                        МЫСАЛДАР
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="example-button"
+                        data-example="kzAttack"
+                    >
+                        KZ · Attack
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="example-button"
+                        data-example="ruAttack"
+                    >
+                        RU · Attack
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="example-button"
+                        data-example="enAttack"
+                    >
+                        EN · Attack
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="example-button"
+                        data-example="benign"
+                    >
+                        Benign
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="promptInput"
+                    maxlength="10000"
+                    spellcheck="true"
+                    data-i18n-placeholder="promptPlaceholder"
+                    placeholder="Тексерілетін сұрауды енгізіңіз..."
+                    aria-label="Prompt to analyze"
+                ></textarea>
+
+
+                <div class="prompt-footer">
+
+                    <div class="prompt-meta">
+
+                        <span class="privacy-note">
+
+                            <i aria-hidden="true"></i>
+
+                            <span data-i18n="privacy">
+                                Мәтін файлға сақталмайды
+                            </span>
+
+                        </span>
+
+
+                        <span class="shortcut">
+                            Ctrl + Enter
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        id="analyzeButton"
+                        class="analyze-button"
+                        type="button"
+                    >
+
+                        <span data-i18n="analyze">
+                            Талдау
+                        </span>
+
+                        <svg
+                            viewBox="0 0 20 20"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M4 10h11M11 6l4 4-4 4"
+                            ></path>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="errorMessage"
+                    class="error-message hidden"
+                    role="alert"
+                ></div>
+
+            </section>
+
+
+            <!-- ANALYSIS -->
+
+            <aside
+                id="analysisWorkspace"
+                class="analysis-pane"
+                aria-live="polite"
+            >
+
+                <div class="pane-toolbar dark">
+
+                    <span>
+                        ANALYSIS
+                    </span>
+
+                    <span
+                        id="analysisStateLabel"
+                        class="analysis-state"
+                        data-i18n="waiting"
+                    >
+                        КҮТУ
+                    </span>
+
+                </div>
+
+
+                <!-- EMPTY STATE -->
+
+                <div
+                    id="emptyAnalysis"
+                    class="analysis-empty"
+                >
+
+                    <div
+                        class="scanner-mark"
+                        aria-hidden="true"
+                    >
+
+                        <span></span>
+                        <span></span>
+                        <i></i>
+
+                    </div>
+
+
+                    <strong data-i18n="awaitingInput">
+                        Сұрау күтілуде
+                    </strong>
+
+
+                    <p data-i18n="awaitingDescription">
+                        Классификация мен XAI нәтижелері
+                        осы жерде көрсетіледі.
+                    </p>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div
+                    id="analysisResult"
+                    class="analysis-result hidden"
+                >
+
+                    <div class="result-eyebrow">
+
+                        <span
+                            id="resultStatusDot"
+                            class="result-status-dot"
+                        ></span>
+
+                        <span
+                            id="resultStatusText"
+                            class="result-status-text"
+                        ></span>
+
+                    </div>
+
+
+                    <h3 id="resultTitle"></h3>
+
+
+                    <p
+                        id="resultDescription"
+                        class="result-description"
+                    ></p>
+
+
+                    <div class="decision-grid">
+
+                        <div class="decision-card">
+
+                            <span data-i18n="decisionScore">
+                                DECISION SCORE
+                            </span>
+
+                            <strong id="decisionScore">
+                                0.0000
+                            </strong>
+
+                        </div>
+
+
+                        <div class="decision-card">
+
+                            <span data-i18n="decisionBoundary">
+                                DECISION BOUNDARY
+                            </span>
+
+                            <strong>
+                                0.0000
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="classification-row">
+
+                        <span data-i18n="classification">
+                            Классификация
+                        </span>
+
+                        <strong id="classificationLabel"></strong>
+
+                    </div>
+
+
+                    <p
+                        class="score-note"
+                        data-i18n="scoreNote"
+                    >
+                        Decision score ықтималдық емес.
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         XAI
+    ====================================================== -->
+
+    <section
+        id="xaiSection"
+        class="content-section xai-section hidden"
+    >
+
+        <header class="section-heading">
+
+            <div>
+
+                <span class="section-kicker">
+                    XAI / MODEL EVIDENCE
+                </span>
+
+                <h2 data-i18n="xaiTitle">
+                    Explainable AI
+                </h2>
+
+            </div>
+
+
+            <p data-i18n="xaiDescription">
+                Модель шешіміне ең көп әсер еткен
+                нақты мәтіндік белгілер.
+            </p>
+
+        </header>
+
+
+        <div class="xai-intro">
+
+            <span
+                class="xai-question"
+                data-i18n="xaiQuestion"
+            >
+                Неліктен модель осындай шешім қабылдады?
+            </span>
+
+        </div>
+
+
+        <div class="xai-grid">
+
+            <article class="xai-card">
+
+                <header>
+
+                    <div>
+
+                        <span
+                            class="signal-dot attack"
+                        ></span>
+
+                        <h3 data-i18n="towardAttack">
+                            Prompt Injection жағына
+                        </h3>
+
+                    </div>
+
+                    <code>
+                        +PI
+                    </code>
+
+                </header>
+
+
+                <div
+                    id="positiveFeatures"
+                    class="feature-list"
+                ></div>
+
+            </article>
+
+
+            <article class="xai-card">
+
+                <header>
+
+                    <div>
+
+                        <span
+                            class="signal-dot safe"
+                        ></span>
+
+                        <h3 data-i18n="towardSafe">
+                            No Prompt Injection жағына
+                        </h3>
+
+                    </div>
+
+                    <code>
+                        −PI
+                    </code>
+
+                </header>
+
+
+                <div
+                    id="negativeFeatures"
+                    class="feature-list"
+                ></div>
+
+            </article>
+
+        </div>
+
+
+        <div class="xai-note">
+
+            <span>
+                i
+            </span>
+
+            <p data-i18n="xaiNote">
+                XAI модель шешімін түсіндіруге көмектеседі,
+                бірақ толық семантикалық түсінудің дәлелі емес.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ANALYTICS
+    ====================================================== -->
+
+    <section
+        id="analytics"
+        class="content-section"
+    >
+
+        <header class="section-heading">
+
+            <div>
+
+                <span class="section-kicker">
+                    03 / MODEL ANALYTICS
+                </span>
+
+                <h2 data-i18n="analyticsTitle">
+                    Көптілді модельді бағалау
+                </h2>
+
+            </div>
+
+
+            <p data-i18n="analyticsDescription">
+                Жабық multilingual test және бөлек
+                robustness stress test нәтижелері.
+            </p>
+
+        </header>
+
+
+        <!-- MAIN METRICS -->
+
+        <div class="metric-grid">
+
+            <article class="metric-card">
+
+                <span>
+                    MACRO-F1
+                </span>
+
+                <strong>
+                    0.9788
+                </strong>
+
+                <small data-i18n="closedTest">
+                    Жабық тест
+                </small>
+
+            </article>
+
+
+            <article class="metric-card">
+
+                <span>
+                    COMBINED F1
+                </span>
+
+                <strong>
+                    0.9903
+                </strong>
+
+                <small data-i18n="closedTest">
+                    Жабық тест
+                </small>
+
+            </article>
+
+
+            <article class="metric-card">
+
+                <span>
+                    MACRO-FPR
+                </span>
+
+                <strong>
+                    0.0416
+                </strong>
+
+                <small data-i18n="closedTest">
+                    Жабық тест
+                </small>
+
+            </article>
+
+        </div>
+
+
+        <div class="analytics-grid">
+
+
+            <!-- LANGUAGE -->
+
+            <article class="analytics-card">
+
+                <header class="card-header">
+
+                    <div>
+
+                        <span class="card-code">
+                            LANGUAGE F1
+                        </span>
+
+                        <h3 data-i18n="languagePerformance">
+                            Тілдер бойынша F1
+                        </h3>
+
+                    </div>
+
+
+                    <span class="card-meta">
+                        CLOSED TEST
+                    </span>
+
+                </header>
+
+
+                <div class="language-chart">
+
+                    <div class="language-row">
+
+                        <span>
+                            EN
+                        </span>
+
+                        <div class="bar-track">
+                            <i style="width:99.31%"></i>
+                        </div>
+
+                        <strong>
+                            0.9931
+                        </strong>
+
+                    </div>
+
+
+                    <div class="language-row">
+
+                        <span>
+                            KZ
+                        </span>
+
+                        <div class="bar-track">
+                            <i style="width:98.18%"></i>
+                        </div>
+
+                        <strong>
+                            0.9818
+                        </strong>
+
+                    </div>
+
+
+                    <div class="language-row">
+
+                        <span>
+                            RU
+                        </span>
+
+                        <div class="bar-track">
+                            <i style="width:96.15%"></i>
+                        </div>
+
+                        <strong>
+                            0.9615
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <p
+                    class="card-note"
+                    data-i18n="languageNote"
+                >
+                    Macro-F1 үш тіл бойынша модель сапасын
+                    теңгерімді түрде көрсетеді.
+                </p>
+
+            </article>
+
+
+            <!-- CONFUSION MATRIX -->
+
+            <article class="analytics-card">
+
+                <header class="card-header">
+
+                    <div>
+
+                        <span class="card-code">
+                            CONFUSION MATRIX
+                        </span>
+
+                        <h3 data-i18n="confusionTitle">
+                            Қателер матрицасы
+                        </h3>
+
+                    </div>
+
+
+                    <span class="card-meta">
+                        COMBINED
+                    </span>
+
+                </header>
+
+
+                <div class="matrix-wrap">
+
+                    <div
+                        class="matrix-axis-top"
+                        data-i18n="predicted"
+                    >
+                        Болжам
+                    </div>
+
+
+                    <div class="confusion-matrix">
+
+                        <div></div>
+
+                        <div class="matrix-label">
+                            NO PI
+                        </div>
+
+                        <div class="matrix-label">
+                            PI
+                        </div>
+
+
+                        <div class="matrix-label">
+                            NO PI
+                        </div>
+
+                        <div class="matrix-cell correct">
+
+                            <strong>
+                                436
+                            </strong>
+
+                            <span>
+                                TN
+                            </span>
+
+                        </div>
+
+                        <div class="matrix-cell error">
+
+                            <strong>
+                                6
+                            </strong>
+
+                            <span>
+                                FP
+                            </span>
+
+                        </div>
+
+
+                        <div class="matrix-label">
+                            PI
+                        </div>
+
+                        <div class="matrix-cell error">
+
+                            <strong>
+                                2
+                            </strong>
+
+                            <span>
+                                FN
+                            </span>
+
+                        </div>
+
+                        <div class="matrix-cell correct">
+
+                            <strong>
+                                410
+                            </strong>
+
+                            <span>
+                                TP
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="matrix-axis-bottom"
+                        data-i18n="actual"
+                    >
+                        Нақты класс
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- ROBUSTNESS -->
+
+        <article class="robustness-panel">
+
+            <header>
+
+                <div>
+
+                    <span class="card-code">
+                        ROBUSTNESS / 36 MANUAL EXAMPLES
+                    </span>
+
+                    <h3 data-i18n="stressTest">
+                        Robustness Stress Test
+                    </h3>
+
+                </div>
+
+
+                <span
+                    class="separate-test"
+                    data-i18n="separateTest"
+                >
+                    БӨЛЕК ТЕСТ
+                </span>
+
+            </header>
+
+
+            <div class="robustness-grid">
+
+                <div>
+                    <span>Accuracy</span>
+                    <strong>0.8333</strong>
+                </div>
+
+                <div>
+                    <span>Precision</span>
+                    <strong>0.8000</strong>
+                </div>
+
+                <div>
+                    <span>Recall</span>
+                    <strong>0.8889</strong>
+                </div>
+
+                <div>
+                    <span>F1</span>
+                    <strong>0.8421</strong>
+                </div>
+
+                <div>
+                    <span>FPR</span>
+                    <strong>0.2222</strong>
+                </div>
+
+            </div>
+
+
+            <p data-i18n="stressNote">
+                Бұл 36 мысал модельді қайта оқытуға немесе
+                threshold баптауға қолданылмаған.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         METHOD
+    ====================================================== -->
+
+    <section
+        id="method"
+        class="content-section"
+    >
+
+        <header class="section-heading">
+
+            <div>
+
+                <span class="section-kicker">
+                    04 / METHODOLOGY
+                </span>
+
+                <h2 data-i18n="methodTitle">
+                    Detection Pipeline
+                </h2>
+
+            </div>
+
+
+            <p data-i18n="methodDescription">
+                Пайдаланушы сұрауынан классификация
+                және Explainable AI түсіндірмесіне дейінгі жол.
+            </p>
+
+        </header>
+
+
+        <div class="method-shell">
+
+
+            <article class="method-step">
+
+                <span class="step-number">
+                    01
+                </span>
+
+                <div class="step-icon">
+                    IN
+                </div>
+
+                <h3 data-i18n="methodInput">
+                    Кіріс
+                </h3>
+
+                <p data-i18n="methodInputDescription">
+                    KZ / RU / EN пайдаланушы сұрауы.
+                </p>
+
+            </article>
+
+
+            <div class="method-connector">
+                <span></span>
+            </div>
+
+
+            <article class="method-step">
+
+                <span class="step-number">
+                    02
+                </span>
+
+                <div class="step-icon">
+                    TF
+                </div>
+
+                <h3>
+                    Feature Space
+                </h3>
+
+                <p>
+                    Word TF-IDF + Character TF-IDF
+                </p>
+
+            </article>
+
+
+            <div class="method-connector">
+                <span></span>
+            </div>
+
+
+            <article class="method-step">
+
+                <span class="step-number">
+                    03
+                </span>
+
+                <div class="step-icon">
+                    SVM
+                </div>
+
+                <h3>
+                    Linear SVM
+                </h3>
+
+                <p data-i18n="methodClassifier">
+                    Prompt Injection / No Prompt Injection.
+                </p>
+
+            </article>
+
+
+            <div class="method-connector">
+                <span></span>
+            </div>
+
+
+            <article class="method-step">
+
+                <span class="step-number">
+                    04
+                </span>
+
+                <div class="step-icon">
+                    XAI
+                </div>
+
+                <h3>
+                    Explainable AI
+                </h3>
+
+                <p data-i18n="methodXai">
+                    Локалды feature contribution арқылы түсіндіру.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <div class="method-note">
+
+            <svg
+                viewBox="0 0 180 48"
+                aria-hidden="true"
+            >
+
+                <path
+                    d="
+                    M0 24
+                    H38
+                    L52 10
+                    L66 24
+                    L52 38
+                    L38 24
+                    H90
+                    L104 10
+                    L118 24
+                    L104 38
+                    L90 24
+                    H180
+                    "
+                ></path>
+
+            </svg>
+
+
+            <p data-i18n="methodResearchNote">
+                Детектор LLM-нің өзінен бөлек
+                алдын ала қауіпсіздік қабаты ретінде жұмыс істейді.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESEARCH DETAILS
+    ====================================================== -->
+
+    <section class="research-section">
+
+        <details>
+
+            <summary>
+
+                <span data-i18n="researchDetails">
+                    Зерттеу туралы
+                </span>
+
+                <span class="details-symbol">
+                    +
+                </span>
+
+            </summary>
+
+
+            <div class="research-content">
+
+                <div>
+
+                    <span class="section-kicker">
+                        RESEARCH TOPIC
+                    </span>
+
+
+                    <p
+                        class="research-title"
+                        data-i18n="researchTitle"
+                    >
+                        Көптілді LLM жүйелеріндегі Prompt Injection
+                        шабуылдарын машиналық оқыту және Explainable AI
+                        негізінде анықтау әдісін әзірлеу
+                    </p>
+
+                </div>
+
+
+                <div class="research-meta">
+
+                    <div>
+
+                        <span>
+                            MODEL
+                        </span>
+
+                        <p>
+                            Hybrid Word + Character TF-IDF
+                            <br>
+                            Linear SVM
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            LANGUAGES
+                        </span>
+
+                        <p>
+                            Қазақша
+                            <br>
+                            Русский
+                            <br>
+                            English
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            STATUS
+                        </span>
+
+                        <p data-i18n="researchPrototype">
+                            Студенттік зерттеу прототипі
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="research-warning">
+
+                    <span>
+                        !
+                    </span>
+
+                    <p data-i18n="limitation">
+                        Жүйе абсолютті қауіпсіздік кепілдігі емес.
+                        Жаңа немесе күрделі қайта тұжырымдалған
+                        шабуылдар қате жіктелуі мүмкін.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </details>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <strong>
+                PI Shield
+            </strong>
+
+            <span data-i18n="footerProject">
+                Prompt Injection анықтау жүйесі
+            </span>
+
+        </div>
+
+
+        <span data-i18n="footerUniversity">
+            Студенттік дипломдық жоба · Satbayev University
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script
+    src="{{ url_for('static', filename='js/app.js') }}"
+></script>
+
+</body>
+
+</html>

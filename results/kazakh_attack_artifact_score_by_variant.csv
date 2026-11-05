@@ -1,0 +1,4 @@
+attack_variant,count,mean,median,max
+long,60,2.08,2.0,6
+long_v2,60,2.75,2.5,6
+short,60,1.15,1.0,4

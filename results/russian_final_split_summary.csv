@@ -1,0 +1,4 @@
+﻿split,total,benign,attack,mean_words,median_words
+train,240,120,120,44.725,22.0
+validation,50,25,25,50.58,26.0
+test,50,25,25,46.4,21.5

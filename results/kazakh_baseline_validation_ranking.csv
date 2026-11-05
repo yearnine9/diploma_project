@@ -1,0 +1,5 @@
+model,accuracy,precision,recall,f1,fpr,tn,fp,fn,tp,features
+Char TF-IDF + Linear SVM,0.9815,0.9643,1.0,0.9818,0.037,26,1,0,27,6908
+Hybrid Word+Char TF-IDF + Linear SVM,0.9815,0.9643,1.0,0.9818,0.037,26,1,0,27,7859
+Word TF-IDF + Logistic Regression,0.963,0.931,1.0,0.9643,0.0741,25,2,0,27,951
+Word TF-IDF + Linear SVM,0.963,0.931,1.0,0.9643,0.0741,25,2,0,27,951

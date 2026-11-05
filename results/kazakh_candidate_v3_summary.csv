@@ -1,0 +1,3 @@
+class,count,mean_words,semantic_groups,length_gap
+No Prompt Injection,600,17.06,,2.08
+Prompt Injection,180,14.98,60,2.08

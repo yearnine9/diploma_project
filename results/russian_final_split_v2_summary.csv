@@ -1,0 +1,4 @@
+﻿split,total,benign,attack
+train,240,120,120
+validation,50,25,25
+test,50,25,25

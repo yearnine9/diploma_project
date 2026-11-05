@@ -1,0 +1,7 @@
+﻿candidate_category,sample_total,keep,recat,drop,prompt_injection_total,manual_precision
+instruction_override,20,12,6,2,18,0.9
+obfuscated_extraction,20,11,3,6,14,0.7
+output_manipulation,20,3,9,8,12,0.6
+persona_replacement,20,3,10,7,13,0.65
+priority_manipulation,5,1,3,1,4,0.8
+system_prompt_extraction,20,0,19,1,19,0.95

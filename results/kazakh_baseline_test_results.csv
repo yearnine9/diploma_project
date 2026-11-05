@@ -1,0 +1,2 @@
+model,accuracy,precision,recall,f1,fpr,tn,fp,fn,tp,features
+Char TF-IDF + Linear SVM,0.9815,0.9643,1.0,0.9818,0.037,26,1,0,27,7756

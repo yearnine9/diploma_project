@@ -1,0 +1,2 @@
+dataset,total,true_negative,false_positive,benign_accuracy,fpr
+kazakh_benign_extra_robustness,420,414,6,0.9857,0.0143

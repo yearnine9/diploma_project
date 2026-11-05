@@ -1,0 +1,2 @@
+﻿scope,rows,accuracy,precision,recall,f1,fpr,tn,fp,fn,tp
+robustness_manual_stress_test,36,0.8333333333333334,0.8,0.8888888888888888,0.8421052631578947,0.2222222222222222,14,4,2,16

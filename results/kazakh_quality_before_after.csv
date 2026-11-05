@@ -1,0 +1,3 @@
+version,benign_mean,attack_mean,length_gap
+before,19.08,9.43,9.65
+after,18.11,12.96,5.15

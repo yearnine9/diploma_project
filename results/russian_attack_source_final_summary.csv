@@ -1,0 +1,4 @@
+﻿source,count,mean_words,median_words
+Lakera/mosscap_prompt_injection,140,38.15,20.0
+hackaprompt/hackaprompt-dataset,49,131.0204081632653,157.0
+openai_synthetic,5,18.2,12.0
